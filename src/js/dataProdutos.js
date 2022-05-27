@@ -1,37 +1,58 @@
 const produtos = [
-    {
-        nome: 'Banana',
-        preco: 2,
-        secao: 'Hortifruti',
-        categoria: 'fruta',
-        img: "./src/img/banana.png"
-    },
-    {
-        nome: 'Morango',
-        preco: 2,
-        secao: 'Hortifruti',
-        categoria: 'fruta',
-        img: './src/img/morango.png'
-    },
-    {
-        nome: 'Maçã',
-        preco: 2,
-        secao: 'Hortifruti',
-        categoria: 'fruta',
-        img: './src/img/maça.png'
-    },
-    {
-        nome: 'Pão',
-        preco: 4,
-        secao: 'Panificadora',
-        categoria: 'Pães',
-        img: './src/img/pao.png'
-    },
-    {
-        nome: 'Leite',
-        preco: 5,
-        secao: 'Laticínio',
-        categoria: 'Leite',
-        img: './src/img/leite.png'
-    }
-]
+  {
+    nome: "Bird Couple",
+    preco: 100,
+    secao: "Paint in Acrylic",
+    categoria: "acrylic",
+    img: "./src/img/acrilico1.jpg",
+  },
+  {
+    nome: "Gouse Couple",
+    preco: 100,
+    secao: "Paint in Acrylic",
+    categoria: "acrylic",
+    img: "./src/img/acrilico2.png",
+  },
+  {
+    nome: "Kiwi Background",
+    preco: 20,
+    secao: "Paint in Watercolor",
+    categoria: "watercolor",
+    img: "./src/img/aquarela1.png",
+  },
+  {
+    nome: "Daisy Background",
+    preco: 20,
+    secao: "Paint in Watercolor",
+    categoria: "watercolor",
+    img: "./src/img/aquarela2.png",
+  },
+  {
+    nome: "Lime Background",
+    preco: 20,
+    secao: "Paint in Watercolor",
+    categoria: "watercolor",
+    img: "./src/img/aquarela3.png",
+  },
+  {
+    nome: "Chick Cloud",
+    preco: 50,
+    secao: "Paint in Guache",
+    categoria: "guache",
+    img: "./src/img/guache1.png",
+  },
+  {
+    nome: "Pink Van Gogh",
+    preco: 80,
+    secao: "Paint in Guache",
+    categoria: "guache",
+    img: "./src/img/guache2.png",
+  },
+  {
+    nome: "Flowers at Night",
+    preco: 30,
+    secao: "Paint in Guache",
+    categoria: "guache",
+    img: "./src/img/guache3.png",
+  },
+];
