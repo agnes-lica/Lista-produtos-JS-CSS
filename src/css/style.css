@@ -1,6 +1,12 @@
+html {
+  width: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* HEARDER */
 
 .title {
   width: 100%;
@@ -20,9 +26,151 @@ main {
   justify-content: center;
 }
 
+.middleContent {
+  display: flex;
+  flex-direction: row;
+}
+
 .all {
   width: 80%;
   margin-top: 44px;
+}
+
+.allCards {
+  width: 75%;
+}
+
+.cart {
+  width: 25%;
+  margin-left: 17px;
+  margin-top: 54px;
+}
+
+.cartEmpty {
+  width: 100%;
+  height: 300px;
+  background-color: #edf6f9;
+  color: #e29578;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.textEmptyCart {
+  width: 60%;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.bagEmpty {
+  width: 50px;
+  height: 50px;
+}
+
+.fullBag {
+  background-color: #edf6f9;
+  width: 100%;
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.listProduct {
+  width: 100%;
+  height: 523px;
+  overflow-y: scroll;
+}
+
+.titleProductBag {
+  font-size: 14px;
+  font-weight: 500;
+  color: #006d77;
+}
+
+.sectionProductBag {
+  font-size: 12px;
+  font-weight: 400;
+  color: #83c5be;
+}
+
+.priceProductBag {
+  font-size: 14px;
+  font-weight: 400;
+  color: #006d77;
+}
+
+.productsBag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.productBagInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.imgBag {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  border: #e29578 solid 1px;
+}
+
+.garbageButton {
+  border: none;
+  background-color: none;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.garbageImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  border: #e29578 solid 1px;
+}
+
+.sumQuantity {
+  width: 100%;
+  height: 59px;
+  background-color: #ffddd2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.sumTotal {
+  width: 100%;
+  height: 59px;
+  background-color: #e29578;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cartTitle {
+  color: #006d77;
+  background-color: #ffddd2;
+  width: 100%;
+  height: 51px;
+  font-weight: 500;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search {
@@ -32,6 +180,8 @@ main {
   height: 56px;
   align-items: center;
 }
+
+/* BUTTONS */
 
 .buttonFilted {
   height: 56px;
@@ -90,46 +240,6 @@ main {
   width: 52px;
 }
 
-.sumPriceTotal {
-  height: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 30px -10px #e29578;
-  margin-top: 44px;
-}
-
-.imgDiv {
-  display: flex;
-  flex-direction: row;
-  gap: 17px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #006d77;
-}
-
-.alertIcon {
-  height: 20px;
-  width: 20px;
-}
-
-.sum {
-  font-size: 14px;
-  font-weight: 500;
-  color: #edf6f9;
-  background-color: #006d77;
-  height: 40px;
-  width: 100px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .productList {
   margin-top: 54px;
   display: flex;
@@ -142,16 +252,13 @@ main {
 .card {
   background-color: #edf6f9;
   width: 254px;
-  height: 300px;
+  height: 330px;
   border-radius: 10px;
   box-shadow: 0px 4px 30px -10px #e29578;
 }
 
 .card:hover {
-  width: 254px;
-  height: 300px;
   background-color: #ffddd2;
-  border-radius: 10px;
   box-shadow: 0px 4px 30px -10px #006d77;
 }
 
@@ -177,10 +284,155 @@ main {
   color: #83c5be;
 }
 
+.orderedListInfo {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 25px;
+  margin-top: 12px;
+  color: #83c5be;
+  list-style: decimal;
+  text-align: start;
+}
+
+.buttonAndPrice {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.addButton {
+  border-radius: 10px;
+  width: 71px;
+  height: 29px;
+  border: solid 2px;
+  color: #e29578;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.addButton:hover {
+  background-color: #e29578;
+  color: #006d77;
+}
+
 .productPrice {
   font-size: 12px;
   font-weight: 500;
-  margin-top: 16px;
-  margin-left: 10px;
   color: #006d77;
+}
+
+@media (max-width: 768px) {
+  html {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .middleContent {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .all {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* SEARCH */
+  .search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .ButtonsFilter {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 65px;
+  }
+
+  .buttonFilted {
+    width: 200px;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffddd2;
+    color: #006d77;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .buttonFilted:hover {
+    background-color: #e29578;
+    color: #83c5be;
+  }
+
+  .searchInputFilter {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-left: 5px;
+    margin-top: 22px;
+  }
+
+  /* CARDS PRODUTOS */
+
+  .allCards {
+    overflow-x: scroll;
+    height: 380px;
+  }
+
+  .cart {
+    width: 100%;
+    height: 237px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .cartTitle {
+    color: #006d77;
+    background-color: #ffddd2;
+    width: 100%;
+    height: 51px;
+    font-weight: 500;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cartEmpty {
+    width: 100%;
+    height: 200px;
+    background-color: #edf6f9;
+    color: #e29578;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
