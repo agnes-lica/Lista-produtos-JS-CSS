@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link
@@ -26,7 +27,7 @@
     <main>
       <section class="all">
         <section class="search">
-          <div>
+          <div class="ButtonsFilter">
             <button class="buttonFilted" id="allProducts">All Products</button>
             <button class="buttonFilted" id="watercolor">
               Art in WaterColor
@@ -42,23 +43,13 @@
           </form>
         </section>
 
-        <section class="sumPriceTotal">
-          <div class="imgDiv">
-            <img
-              class="alertIcon"
-              src="https://img.icons8.com/ios/100/006D77/break.png"
-            />
-            <p class="text of total value">
-              Total value of the productos of the selected section
-            </p>
+        <section class="middleContent">
+          <div class="allCards">
+            <ul class="productList"></ul>
           </div>
-          <div class="sum">
-            <p class="sumTotal">R$420</p>
+          <div class="cart">
+            <h3 class="cartTitle">Shop Cart</h3>
           </div>
-        </section>
-
-        <section class="allCards">
-          <ul class="productList"></ul>
         </section>
       </section>
     </main>
